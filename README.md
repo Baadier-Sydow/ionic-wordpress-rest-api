@@ -1,0 +1,1 @@
+Companion code for the WordPress integration with Ionic Framework tutorial at [Ionic Framework & WordPress REST API](https://baadiersydow.com/)
