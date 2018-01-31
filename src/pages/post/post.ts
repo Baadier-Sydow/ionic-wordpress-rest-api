@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { WordpressProvider } from './../../providers/wordpress/wordpress';
 
 @Component({
   selector: 'page-post',
@@ -10,7 +9,7 @@ export class PostPage {
 
   post: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public wordpress: WordpressProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.post = this.navParams.get("post");
   }
 
