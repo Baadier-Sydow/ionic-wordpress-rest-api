@@ -6,21 +6,29 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { HttpModule } from '@angular/http';
 import { WordpressProvider } from '../providers/wordpress/wordpress';
+import { CategoryListPage } from '../pages/category-list/category-list';
+import { PostPage } from './../pages/post/post';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    CategoryListPage,
+    PostPage
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    CategoryListPage,
+    PostPage
   ],
   providers: [
     StatusBar,
